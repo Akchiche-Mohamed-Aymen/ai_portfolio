@@ -79,16 +79,17 @@ st.markdown("""
 }
 
 /* Per-platform icon backgrounds */
-.icon-linkedin  { background: rgba(10,  102, 194, 0.12); }
-.icon-telegram  { background: rgba(38,  161, 218, 0.12); }
-.icon-facebook  { background: rgba(24,  119, 242, 0.12); }
-.icon-email     { background: rgba(234,  88,  12, 0.12); }
-.icon-phone     { background: rgba(34,  197,  94, 0.12); }
-.icon-whatsapp  { background: rgba(37,  211, 102, 0.12); }
+.icon-linkedin  { background: rgba(10,  102, 194, 0.12); color: #0A66C2; }
+.icon-telegram  { background: rgba(38,  161, 218, 0.12); color: #0088CC; }
+.icon-facebook  { background: rgba(24,  119, 242, 0.12); color: #1877F2; }
+.icon-email     { background: rgba(234,  88,  12, 0.12); color: #EA580C; }
+.icon-phone     { background: rgba(34,  197,  94, 0.12); color: #22C55E; }
+.icon-whatsapp  { background: rgba(37,  211, 102, 0.12); color: #25D366; }
 </style>
 """, unsafe_allow_html=True)
-
-# ── Page header ──────────────────────────────────────────────────────────────
+st.markdown("""
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+""", unsafe_allow_html=True)
 st.markdown("""
 <div class="contact-header">
     <h1>Contact me</h1>
@@ -102,42 +103,42 @@ contacts = [
         "label":    "LinkedIn",
         "value":    "Mohamed Aymen Akchiche",
         "href":     "https://www.linkedin.com/in/mohamed-aymen-akchiche-b9b0b7303/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIePej3xCQe6HljM31DBF%2Bg%3D%3D",
-        "icon":     "🔗",
+        "icon":     '<i class="fa-brands fa-linkedin-in"></i>',
         "css_cls":  "icon-linkedin",
     },
     {
         "label":    "Telegram",
         "value":    "@أيمن",
         "href":     "https://t.me/Aqangi",
-        "icon":     "✈️",
+        "icon":     '<i class="fa-brands fa-telegram"></i>',
         "css_cls":  "icon-telegram",
     },
     {
         "label":    "Facebook",
         "value":    "@Aymen Akchiche",
         "href":     "https://www.facebook.com/share/1CpB1F3XMm/",
-        "icon":     "📘",
+        "icon":     '<i class="fa-brands fa-facebook-f"></i>',
         "css_cls":  "icon-facebook",
     },
     {
         "label":    "Email",
         "value":    "akchiche.mohamedaymen@univ-ouargla.dz",
         "href":     "mailto:akchiche.mohamedaymen@univ-ouargla.dz",
-        "icon":     "📧",
+        "icon":     '<i class="fa-solid fa-envelope"></i>',
         "css_cls":  "icon-email",
     },
     {
         "label":    "Phone",
         "value":    "+213 698841788",
         "href":     "tel:+213698841788",
-        "icon":     "📞",
+        "icon":     '<i class="fa-solid fa-phone"></i>',
         "css_cls":  "icon-phone",
     },
     {
         "label":    "WhatsApp",
         "value":    "+213 698841788",
         "href":     "https://wa.me/213698841788",
-        "icon":     "💚",
+        "icon":     '<i class="fa-brands fa-whatsapp"></i>',
         "css_cls":  "icon-whatsapp",
     },
 ]
