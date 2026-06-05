@@ -1,0 +1,132 @@
+{
+  "profile": {
+    "name": "Mohamed Aymen Akchiche",
+    "title": "ML & Generative AI Engineer",
+    "bio": "Computer Science Engineering student focused on Machine Learning, NLP, and Generative AI systems. Passionate about building intelligent applications powered by data and modern AI technologies.",
+    "location": "Algeria",
+    "github": "https://github.com/your-username",
+    "linkedin": "https://linkedin.com/in/your-username",
+    "email": "your-email@example.com"
+  },
+
+  "skills": [
+    "Python",
+    "NumPy",
+    "Pandas",
+    "Scikit-learn",
+    "FastAPI",
+    "LangChain",
+    "Streamlit",
+    "Matplotlib",
+    "Git",
+    "SQL",
+    "Machine Learning",
+    "Deep Learning",
+    "Natural Language Processing",
+    "Generative AI",
+    "Prompt Engineering",
+  ],
+
+  "categories": [
+    "ml",
+    "dl",
+    "nlp",
+    "gen_ai"
+  ],
+
+  "projects": [
+    {
+      "id": "rop_prediction_system",
+
+      "title": "ROP Prediction System",
+
+      "description": "Machine learning system for predicting drilling rate (ROP) using operational drilling parameters.",
+
+      "categories": [
+        "ml"
+      ],
+
+      "techStack": [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "Streamlit"
+      ],
+
+      "gitLink": "https://github.com/your-username/rop-prediction",
+
+      "liveDemo": "https://your-demo-link.streamlit.app"
+    },
+
+    {
+      "id": "sentiment_analysis_app",
+
+      "title": "Sentiment Analysis App",
+
+      "description": "NLP application for classifying text sentiment using natural language processing techniques.",
+
+      "categories": [
+        "nlp",
+        "ml"
+      ],
+
+      "techStack": [
+        "Python",
+        "Scikit-learn",
+        "NLTK",
+        "Streamlit"
+      ],
+
+      "gitLink": "https://github.com/your-username/sentiment-analysis",
+
+      "liveDemo": "https://your-demo-link.streamlit.app"
+    },
+
+    {
+      "id": "rag_chatbot",
+
+      "title": "RAG AI Chatbot",
+
+      "description": "Retrieval-Augmented Generation chatbot powered by LangChain and modern LLM workflows.",
+
+      "categories": [
+        "gen_ai",
+        "nlp"
+      ],
+
+      "techStack": [
+        "Python",
+        "LangChain",
+        "FastAPI",
+        "Streamlit"
+      ],
+
+      "gitLink": "https://github.com/your-username/rag-chatbot",
+
+      "liveDemo": "https://your-demo-link.streamlit.app"
+    },
+
+    {
+      "id": "image_classifier",
+
+      "title": "Image Classification System",
+
+      "description": "Deep learning application for image classification using convolutional neural networks.",
+
+      "categories": [
+        "dl"
+      ],
+
+      "techStack": [
+        "Python",
+        "TensorFlow",
+        "NumPy",
+        "Streamlit"
+      ],
+
+      "gitLink": "https://github.com/your-username/image-classifier",
+
+      "liveDemo": "https://your-demo-link.streamlit.app"
+    }
+  ]
+}

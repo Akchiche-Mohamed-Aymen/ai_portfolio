@@ -47,7 +47,7 @@ st.markdown("""
 
 .profile-role {
     font-size: 0.9rem;
-    color: black;
+    color: inherit;
     margin: 0 0 1rem;
     letter-spacing: 0.02em;
 }
@@ -77,9 +77,6 @@ st.markdown("""
 with st.sidebar:
     st.markdown("""
     <div class="profile-block">
-        <div class="avatar-wrapper">
-            <img src="images/profile.webp" alt="Profile photo" />
-        </div>
         <div class="profile-name">Mohamed Aymen Akchiche</div>
         <div class="profile-role">ML &amp; AI Engineer</div>
         <span class="profile-badge">&#x25cf;&nbsp; Available</span>
