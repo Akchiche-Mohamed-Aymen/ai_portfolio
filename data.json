@@ -21,11 +21,9 @@
     "Git",
     "SQL",
     "Machine Learning",
-    "Deep Learning",
-    "Natural Language Processing",
-    "Generative AI",
-    "Prompt Engineering"
+    "Deep Learning"  
   ],
+  "future_skills" : ["Natural Language Processing","Generative AI","Prompt Engineering"],
 
   "categories": [
     "ml",
