@@ -93,11 +93,10 @@ projects_page = st.Page("pages/Projects.py",title="Projects",icon="📂")
 contact_page  = st.Page("pages/Contact.py", title="Contact", icon="📩")
 
 project_details_page = st.Page(
-    "project_details/project_details.py", title="Project Details"
+    "pages/project_details.py", title="-"
 )
 
 pg = st.navigation({
-    "Main": [home_page, profile_page, projects_page, contact_page]
+    "Main": [home_page, profile_page, projects_page, contact_page , project_details_page]
 })
-
 pg.run()
