@@ -29,9 +29,6 @@ st.write(
 
 st.divider()
 
-# =========================
-# Dynamic Stats
-# =========================
 col1, col2, col3 = st.columns(3)
 projects_count = edit_number(len(data["projects"]))
 skills_count = edit_number(len(data["skills"]))
@@ -55,10 +52,6 @@ with col3:
     )
 
 st.divider()
-
-# =========================
-# Categories Overview
-# =========================
 st.subheader("Focus Areas")
 
 cols = st.columns(len(data["categories"]))
@@ -69,9 +62,6 @@ for col, category in zip(cols, data["categories"]):
 
 st.divider()
 
-# =========================
-# Navigation Buttons
-# =========================
 st.subheader("Explore")
 
 col1, col2 = st.columns(2)

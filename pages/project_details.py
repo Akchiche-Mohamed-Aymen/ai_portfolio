@@ -1,9 +1,7 @@
 import streamlit as st
 import json
 
-# =========================
-# Load Data
-# =========================
+
 with open("./data.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
