@@ -42,13 +42,34 @@ cols = st.columns(3)
 
 for i, skill in enumerate(skills):
     with cols[i % 3]:
-        st.info(skill)
+        logo_url = skill.get("logo", "")
+        skill_name = skill["name"]
+
+        if logo_url:
+            st.markdown(
+                f"""
+                <div style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    background-color: #f0f2f6;
+                    border-radius: 8px;
+                    padding: 10px 14px;
+                    margin-bottom: 10px;
+                ">
+                    <img src="{logo_url}" width="28" height="28"
+                         style="object-fit: contain; flex-shrink: 0; border-radius: 4px;"
+                         onerror="this.style.display='none'" />
+                    <span style="font-size: 0.95rem; font-weight: 500; color: red">{skill_name}</span>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+        else:
+            st.info(skill_name)
 
 st.divider()
 
-# =========================
-# Categories
-# =========================
 st.subheader("AI Focus Areas")
 
 cols = st.columns(len(categories))
@@ -59,9 +80,6 @@ for col, cat in zip(cols, categories):
 
 st.divider()
 
-# =========================
-# Career Focus
-# =========================
 st.subheader("Career Focus")
 
 st.write("""
