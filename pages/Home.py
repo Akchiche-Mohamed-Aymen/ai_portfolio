@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-with open('data\data.json', "r", encoding="utf-8" ) as file:
+with open('./data/data.json', "r", encoding="utf-8" ) as file:
     data = json.load(file)
 def edit_number(num):
     if num > 10 :
