@@ -82,6 +82,8 @@
         "Numpy",
         "Pandas"
       ],
+      "gitLink" : "https://github.com/Akchiche-Mohamed-Aymen/house-prediction-multiple-regression",
+      "liveDemo" : "https://house-prediction-multiple-regression-mphxy4in5viwbbujeff7oy.streamlit.app/",
       "id": "House_Price_Estimator"
     }
   ]

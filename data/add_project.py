@@ -31,6 +31,8 @@ with st.form("project_form"):
         "Tech Stack (comma-separated)",
         placeholder="Python, TensorFlow, Streamlit, LangChain"
     )
+    gitLink = st.text_input("Github Link")
+    liveDemo = st.text_input("Live Demo")
 
     submitted = st.form_submit_button("Create Project")
 
@@ -45,7 +47,9 @@ if submitted:
         "title": title,
         "description": description,
         "categories": categories,
-        "techStack": tech_stack
+        "techStack": tech_stack,
+        "gitLink" : gitLink , 
+        "liveDemo" : liveDemo
     }
     try:
         add(project)
