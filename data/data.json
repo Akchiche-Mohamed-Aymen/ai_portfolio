@@ -1,0 +1,88 @@
+{
+  "profile": {
+    "name": "Mohamed Aymen Akchiche",
+    "title": "ML & Generative AI Engineer",
+    "bio": "Computer Science Engineering student focused on Machine Learning, NLP, and Generative AI systems. Passionate about building intelligent applications powered by data and modern AI technologies.",
+    "location": "Algeria",
+    "github": "https://github.com/your-username",
+    "linkedin": "https://linkedin.com/in/your-username",
+    "email": "your-email@example.com"
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    },
+    {
+      "name": "NumPy",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+    },
+    {
+      "name": "Pandas",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+    },
+    {
+      "name": "Scikit-learn",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+    },
+    {
+      "name": "FastAPI",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+    },
+    {
+      "name": "LangChain",
+      "logo": "https://www.bing.com/th/id/OIP.TIpbmO20RMND_W0X4L20jwAAAA?w=193&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+    },
+    {
+      "name": "Streamlit",
+      "logo": "https://streamlit.io/images/brand/streamlit-mark-color.svg"
+    },
+    {
+      "name": "Matplotlib",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg"
+    },
+    {
+      "name": "Git",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+    },
+    {
+      "name": "SQL",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+    },
+    {
+      "name": "Machine Learning",
+      "logo": "https://th.bing.com/th/id/OIP._t5PX6dYzcfXc14lQlbYxwHaHa?w=209&h=209&c=7&r=0&o=7&pid=1.7&rm=3"
+    },
+    {
+      "name": "Deep Learning",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+    }
+  ],
+  "future_skills": [
+    "Natural Language Processing",
+    "Generative AI",
+    "Prompt Engineering"
+  ],
+  "categories": [
+    "ML",
+    "DL",
+    "NLP",
+    "Gen AI"
+  ],
+  "projects": [
+    {
+      "title": " House Price Estimator",
+      "description": "A machine learning project that predicts house prices based on property features . The prediction model is built using Linear Regression implemented from scratch using Python, without relying on machine learning libraries, providing a deeper understanding of the underlying mathematics and optimization process.",
+      "categories": [
+        "ML"
+      ],
+      "techStack": [
+        "Python",
+        "Streamlit",
+        "Numpy",
+        "Pandas"
+      ],
+      "id": "House_Price_Estimator"
+    }
+  ]
+}
