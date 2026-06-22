@@ -8,11 +8,11 @@ with st.form("project_form"):
 
     # Title
     title = st.text_input("Project Title")
-
+    height = 150 
     # Description
     description = st.text_area(
         "Project Description",
-        height=150
+        height = height
     )
 
     # Categories
@@ -31,6 +31,9 @@ with st.form("project_form"):
         "Tech Stack (comma-separated)",
         placeholder="Python, TensorFlow, Streamlit, LangChain"
     )
+    overview = st.text_area("Overview" , height=height)
+    problem = st.text_area("Problem" , height=height)
+    approach = st.text_area("Approach" , height=height)
     gitLink = st.text_input("Github Link")
     liveDemo = st.text_input("Live Demo")
 
@@ -48,7 +51,10 @@ if submitted:
         "description": description,
         "categories": categories,
         "techStack": tech_stack,
-        "gitLink" : gitLink , 
+        "gitLink" : gitLink ,
+        "overview" : overview ,
+        "problem" : problem ,
+        "approch" : approch ,
         "liveDemo" : liveDemo
     }
     try:

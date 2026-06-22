@@ -1,0 +1,5 @@
+**Data Preprocessing** : Clean and prepare the dataset by handling missing values and selecting relevant features.
+**Model Implementation**: Build a Linear Regression model from scratch using Python and NumPy.
+**Training**: Learn the optimal model parameters by minimizing prediction error through gradient descent.
+**Prediction**: Use the trained model to estimate house prices for new properties.
+**Evaluation**: Measure model performance using metrics such as Mean Squared Error (MSE) and R² Score.

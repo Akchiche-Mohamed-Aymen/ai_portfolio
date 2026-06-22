@@ -71,8 +71,11 @@
   ],
   "projects": [
     {
-      "title": " House Price Estimator",
+      "title": "House Price Estimator",
       "description": "A machine learning project that predicts house prices based on property features . The prediction model is built using Linear Regression implemented from scratch using Python, without relying on machine learning libraries, providing a deeper understanding of the underlying mathematics and optimization process.",
+      "overview" : "House Price Estimator is a machine learning project that predicts the price of a house using its features, such as area, number of bedrooms, bathrooms, and other relevant attributes. The project implements a Linear Regression model from scratch in Python to demonstrate the fundamental concepts behind predictive modeling without relying on machine learning frameworks." ,
+      "problem" : "Estimating house prices accurately is important for buyers, sellers, and real estate agencies. Manual valuation can be subjective and time-consuming, making it difficult to determine a fair market price based on multiple property characteristics.",
+      "approach" : "The project follows a complete machine learning workflow, starting with data preprocessing and feature selection to prepare the housing data for training. A Linear Regression model is then implemented entirely from scratch using Python and NumPy, with gradient descent used to learn the optimal parameters by minimizing prediction error. After training, the model is evaluated using standard regression metrics such as Mean Squared Error (MSE) and R² Score, and is finally used to predict house prices based on the features of unseen properties." ,
       "categories": [
         "ML"
       ],
