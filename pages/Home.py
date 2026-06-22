@@ -1,9 +1,6 @@
 import streamlit as st
 import json
-from pathlib import Path
-BASE_DIR = Path(__file__).resolve().parent.parent
-data_path =   BASE_DIR / "data.json"
-with open('./data.json', "r", encoding="utf-8" ) as file:
+with open('data\data.json', "r", encoding="utf-8" ) as file:
     data = json.load(file)
 def edit_number(num):
     if num > 10 :
