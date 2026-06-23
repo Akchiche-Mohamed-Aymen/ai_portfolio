@@ -54,7 +54,7 @@ if submitted:
         "gitLink" : gitLink ,
         "overview" : overview ,
         "problem" : problem ,
-        "approch" : approch ,
+        "approach" : approach ,
         "liveDemo" : liveDemo
     }
     try:
