@@ -71,6 +71,27 @@
   ],
   "projects": [
     {
+      "title": "Customer Churn Prediction",
+      "description": "A machine learning project that predicts customer churn in the banking sector and segments customers into distinct groups based on their behavioral and demographic characteristics. The system combines predictive analytics, customer segmentation, and generative AI-powered recommendations to help banks identify at-risk customers and improve retention strategies.",
+      "categories": [
+        "ML",
+        "Gen AI"
+      ],
+      "techStack": [
+        "Scikit-learn",
+        "Python",
+        "Pandas",
+        "LangChain",
+        "Streamlit"
+      ],
+      "gitLink": "https://github.com/Akchiche-Mohamed-Aymen/Customer-Churn-Prediction-Segmentation-Using-Machine-Learning",
+      "overview": "The Customer Churn Prediction System is designed to analyze customer data and determine the likelihood of a customer leaving the bank. In addition to churn prediction, the project uses clustering techniques to segment customers into meaningful groups, enabling more targeted retention strategies. To enhance decision-making, a recommendation module built with LangChain and the Gemini API generates actionable insights and personalized recommendations based on the prediction and segmentation results.",
+      "problem": "Customer churn represents a significant challenge for banks, as acquiring new customers is often more expensive than retaining existing ones. Identifying customers who are likely to leave and understanding the characteristics of different customer segments are essential for developing effective retention strategies. Traditional analysis methods may fail to uncover complex patterns in customer behavior, making it difficult to proactively address churn risks.",
+      "approach": "The project follows a complete data science workflow, starting with data preprocessing, exploratory data analysis, and feature engineering to prepare customer data for modeling. A Random Forest Classifier was trained to predict customer churn and achieved strong performance due to its ability to capture complex relationships within the data. Model effectiveness was evaluated using Accuracy (overall prediction correctness), Precision (how many predicted churners actually churned), and Recall (how many actual churners were successfully identified). For customer segmentation, K-Means clustering was applied, and the optimal number of clusters was selected using the Silhouette Score, which measures how well customers fit within their assigned clusters. Finally, LangChain integrated with the Gemini API was used to generate personalized recommendations and retention strategies based on each customer's predicted churn risk and segment profile.",
+      "liveDemo": "https://customer-churn-prediction-segmentation-using-machine-learning.streamlit.app/",
+      "id": "Customer_Churn_Prediction"
+    },
+    {
       "title": "ROP Prediction System",
       "description": "A freelance machine learning project developed for the oil and gas industry to predict the Rate of Penetration (ROP) during drilling operations. The system leverages historical drilling and geological data to estimate drilling performance, helping engineers optimize operational parameters and improve drilling efficiency.",
       "categories": [

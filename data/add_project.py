@@ -27,9 +27,11 @@ with st.form("project_form"):
     )
 
     # Tech Stack
-    tech_stack_input = st.text_input(
-        "Tech Stack (comma-separated)",
-        placeholder="Python, TensorFlow, Streamlit, LangChain"
+    tech_stack= st.multiselect(
+        "Technologie(s)",
+        options=[
+            "Scikit-learn" , "Python" , 'Numpy' , 'Pandas' , 'Nltk' , 'Streamlit' , 'Tensorflow' , 'LangChain'
+        ]
     )
     overview = st.text_area("Overview" , height=height)
     problem = st.text_area("Problem" , height=height)
@@ -40,11 +42,7 @@ with st.form("project_form"):
     submitted = st.form_submit_button("Create Project")
 
 if submitted:
-    tech_stack = [
-        tech.strip()
-        for tech in tech_stack_input.split(",")
-        if tech.strip()
-    ]
+    
 
     project = {
         "title": title,
