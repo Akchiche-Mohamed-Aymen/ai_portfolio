@@ -71,6 +71,22 @@
   ],
   "projects": [
     {
+      "title": "Email generator",
+      "description": "An AI-powered email generation tool that creates professional and personalized emails based on user-defined requirements. The application leverages LangChain and the Gemini API to generate complete emails, including both the subject line and body, while adapting to the desired style, tone, emotion, and communication context.",
+      "categories": [
+        "Gen AI"
+      ],
+      "techStack": [
+        "LangChain"
+      ],
+      "gitLink": "https://github.com/Akchiche-Mohamed-Aymen/Email-generator",
+      "overview": "The Email Generator is a Generative AI application designed to simplify email writing by transforming user instructions into well-structured and context-aware emails. Users can provide details such as the sender's name, email purpose, target audience, writing style, emotional tone, and key points to include. The system then generates a polished email with an appropriate subject line, helping users save time while maintaining effective communication.",
+      "problem": "Writing professional emails can be time-consuming, especially when users need to adapt their message to different contexts, audiences, and tones. Many individuals struggle to find the right wording or structure for formal, persuasive, friendly, or emotionally sensitive communications. This challenge becomes more significant when frequent email creation is required, leading to reduced productivity and inconsistent messaging.",
+      "approach": "The project utilizes LangChain as the orchestration framework and the Gemini API as the underlying large language model. Users provide customization parameters such as the sender's name, email context, target audience, writing style, tone, emotion, and additional instructions. These inputs are incorporated into a carefully designed prompt that guides the model to generate a coherent and contextually appropriate email. The system then produces both a relevant subject line and a complete email body tailored to the user's requirements, ensuring consistency, clarity, and personalization.",
+      "liveDemo": "https://generate-email-with-ai.streamlit.app/",
+      "id": "Email_generator"
+    },
+    {
       "title": "Customer Churn Prediction",
       "description": "A machine learning project that predicts customer churn in the banking sector and segments customers into distinct groups based on their behavioral and demographic characteristics. The system combines predictive analytics, customer segmentation, and generative AI-powered recommendations to help banks identify at-risk customers and improve retention strategies.",
       "categories": [
@@ -98,6 +114,7 @@
         "ML"
       ],
       "techStack": [
+        "Scikit-learn",
         "Python",
         "Streamlit",
         "Pandas",
