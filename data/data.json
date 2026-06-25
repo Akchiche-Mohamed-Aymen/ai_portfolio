@@ -71,6 +71,26 @@
   ],
   "projects": [
     {
+      "title": "Spam classification",
+      "description": "A machine learning project that automatically classifies email and text messages as Spam or Not Spam (Ham). The system combines Natural Language Processing (NLP) techniques with a Naive Bayes classifier to detect unwanted messages and improve communication security.",
+      "categories": [
+        "NLP"
+      ],
+      "techStack": [
+        "Python",
+        "Scikit-learn",
+        "Nltk",
+        "Pandas",
+        "Streamlit"
+      ],
+      "gitLink": "https://github.com/Akchiche-Mohamed-Aymen/spam_detection_classifier",
+      "overview": "The Spam Detection System is a binary text classification application designed to identify spam messages based on their textual content. The project utilizes TF-IDF (Term Frequency\u2013Inverse Document Frequency) to convert text into numerical features that capture the importance of words within messages. These features are then used by a Naive Bayes model to accurately distinguish between legitimate and spam communications.",
+      "problem": "Spam messages continue to be a major challenge in digital communication, causing security concerns, reduced productivity, and poor user experience. Building an effective spam filter requires accurately identifying unwanted messages while avoiding the incorrect classification of legitimate communications. Additionally, imbalanced datasets can negatively impact model performance and lead to biased predictions.",
+      "approach": "The project begins with text preprocessing, including data cleaning, tokenization, and the removal of unnecessary characters. The textual data is then transformed into numerical representations using TF-IDF vectorization, which highlights important terms while reducing the influence of commonly occurring words. During exploratory analysis, the dataset was found to be imbalanced, so balancing techniques were applied to improve the model's ability to learn from both classes effectively. A Naive Bayes classifier was then trained on the TF-IDF features to perform binary classification. Model performance was evaluated using Accuracy (overall prediction correctness), Precision (the proportion of predicted spam messages that were actually spam), and Recall (the proportion of actual spam messages successfully identified). The final model achieved strong results across all evaluation metrics, demonstrating its effectiveness in detecting spam while minimizing classification errors.",
+      "liveDemo": "https://spamdetectionclassifier.streamlit.app/",
+      "id": "Spam_classification"
+    },
+    {
       "title": "Email generator",
       "description": "An AI-powered email generation tool that creates professional and personalized emails based on user-defined requirements. The application leverages LangChain and the Gemini API to generate complete emails, including both the subject line and body, while adapting to the desired style, tone, emotion, and communication context.",
       "categories": [
