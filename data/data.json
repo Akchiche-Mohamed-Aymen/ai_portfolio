@@ -71,6 +71,26 @@
   ],
   "projects": [
     {
+      "title": "Poem Genre Classification Project",
+      "description": "A Natural Language Processing (NLP) project that classifies poems into one of four genres: Affection, Death, Environment, and Music. The project explores text representation learning by fine-tuning a transformer-based embedding model to improve semantic understanding and genre classification performance.",
+      "categories": [
+        "NLP"
+      ],
+      "techStack": [
+        "Scikit-learn",
+        "Python",
+        "Pandas",
+        "Nltk",
+        "Streamlit"
+      ],
+      "gitLink": "https://github.com/Akchiche-Mohamed-Aymen/poem_classification",
+      "overview": "The Poem Genre Classification Project is a multi-class text classification system that automatically predicts the genre of a poem based on its content. Instead of relying on traditional text representations, the project fine-tunes a pre-trained sentence embedding model to generate domain-specific embeddings, which are then used by machine learning classifiers for accurate genre prediction.",
+      "problem": "Poetry often contains figurative language, metaphors, and overlapping themes, making genre classification a challenging NLP task. Poems from different genres may share similar vocabulary while expressing different meanings, reducing the effectiveness of traditional text classification methods. The goal is to learn richer semantic representations that better capture the contextual meaning of poems and improve classification accuracy.",
+      "approach": "The project starts with text preprocessing and dataset preparation, followed by fine-tuning a pre-trained Sentence Transformer embedding model using a similarity-based learning approach to produce embeddings specialized for poem genres. The generated embeddings are then used as input to multiple machine learning classifiers, including Logistic Regression, Support Vector Machine (SVM), K-Nearest Neighbors (KNN), Random Forest, and Artificial Neural Networks (ANN). Their performance is compared to identify the best-performing classifier. The models are evaluated using Accuracy (overall prediction correctness), Precision (the reliability of predicted genres), Recall (the proportion of correctly identified poems for each genre), and F1-Score (the balance between precision and recall). The final system demonstrates how domain-specific embedding fine-tuning combined with classifier selection can improve semantic understanding and multi-class poem genre classification.",
+      "liveDemo": "https://poemclassification.streamlit.app/",
+      "id": "Poem_Genre_Classification_Project"
+    },
+    {
       "title": "Spam classification",
       "description": "A machine learning project that automatically classifies email and text messages as Spam or Not Spam (Ham). The system combines Natural Language Processing (NLP) techniques with a Naive Bayes classifier to detect unwanted messages and improve communication security.",
       "categories": [
@@ -86,7 +106,7 @@
       "gitLink": "https://github.com/Akchiche-Mohamed-Aymen/spam_detection_classifier",
       "overview": "The Spam Detection System is a binary text classification application designed to identify spam messages based on their textual content. The project utilizes TF-IDF (Term Frequency\u2013Inverse Document Frequency) to convert text into numerical features that capture the importance of words within messages. These features are then used by a Naive Bayes model to accurately distinguish between legitimate and spam communications.",
       "problem": "Spam messages continue to be a major challenge in digital communication, causing security concerns, reduced productivity, and poor user experience. Building an effective spam filter requires accurately identifying unwanted messages while avoiding the incorrect classification of legitimate communications. Additionally, imbalanced datasets can negatively impact model performance and lead to biased predictions.",
-      "approach": "The project begins with text preprocessing, including data cleaning, tokenization, and the removal of unnecessary characters. The textual data is then transformed into numerical representations using TF-IDF vectorization, which highlights important terms while reducing the influence of commonly occurring words. During exploratory analysis, the dataset was found to be imbalanced, so balancing techniques were applied to improve the model's ability to learn from both classes effectively. A Naive Bayes classifier was then trained on the TF-IDF features to perform binary classification. Model performance was evaluated using Accuracy (overall prediction correctness), Precision (the proportion of predicted spam messages that were actually spam), and Recall (the proportion of actual spam messages successfully identified). The final model achieved strong results across all evaluation metrics, demonstrating its effectiveness in detecting spam while minimizing classification errors.",
+      "approach": "The project begins with text preprocessing, including data cleaning , the removal of unnecessary characters and stemming. The textual data is then transformed into numerical representations using TF-IDF vectorization, which highlights important terms while reducing the influence of commonly occurring words. During exploratory analysis, the dataset was found to be imbalanced, so balancing techniques were applied to improve the model's ability to learn from both classes effectively. A Naive Bayes classifier was then trained on the TF-IDF features to perform binary classification. Model performance was evaluated using Accuracy (overall prediction correctness), Precision (the proportion of predicted spam messages that were actually spam), and Recall (the proportion of actual spam messages successfully identified). The final model achieved strong results across all evaluation metrics, demonstrating its effectiveness in detecting spam while minimizing classification errors.",
       "liveDemo": "https://spamdetectionclassifier.streamlit.app/",
       "id": "Spam_classification"
     },
