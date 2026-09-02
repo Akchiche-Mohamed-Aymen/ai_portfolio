@@ -22,15 +22,15 @@ with st.form("project_form"):
             "ML",
             "DL",
             "NLP",
-            "Gen AI"
+            "Gen AI",
+            "AI Agents",
         ]
     )
-
     # Tech Stack
     tech_stack= st.multiselect(
         "Technologie(s)",
         options=[
-            "Scikit-learn" , "Python" , 'Numpy' , 'Pandas' , 'Nltk' , 'Streamlit' , 'Tensorflow' , 'LangChain'
+            "Scikit-learn" , "Python" , 'Numpy' , 'Pandas' , 'Nltk' , 'Streamlit' , 'Tensorflow' , 'LangChain' , 'LangGraph' , 'Google Gemini' , 'ChromaDB' , 'RAG' , 'Vector Embeddings' , 'Tool Calling' , 'Agent Memory'
         ]
     )
     overview = st.text_area("Overview" , height=height)

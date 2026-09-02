@@ -67,9 +67,35 @@
     "ML",
     "DL",
     "NLP",
-    "Gen AI"
+    "Gen AI",
+    "AI Agents"
   ],
   "projects": [
+    {
+      "title": "AI-Powered E-Learning Agent",
+      "description": "An AI-powered multi-agent assistant designed for an English e-learning platform. The system combines LLM reasoning with structured learning data, specialized tools, RAG, and conversational memory to provide context-aware and personalized responses.",
+      "categories": [
+        "Gen AI",
+        "AI Agents"
+      ],
+      "techStack": [
+        "Python",
+        "LangChain",
+        "LangGraph",
+        "Google Gemini",
+        "ChromaDB",
+        "RAG",
+        "Vector Embeddings",
+        "Tool Calling",
+        "Agent Memory"
+      ],
+      "gitLink": "https://github.com/Akchiche-Mohamed-Aymen/e-learning-chat-agent",
+      "overview": "The assistant can handle different types of questions related to students, instructors, courses, exams, and educational content. Instead of relying entirely on the LLM, it connects the model to appropriate external sources and tools depending on the user's request.\n\nThe system also handles conversational context by retrieving relevant previous interactions or using a summarized conversation history when relevant information cannot be retrieved directly.",
+      "problem": "An e-learning assistant needs to deal with several different sources of information:\n\n- Structured student and course data\n- Instructor information\n- Unstructured educational documents\n- Previous conversations\n- User-specific permissions\n\nA simple LLM-based chatbot cannot reliably determine which source to use, maintain useful context across conversations, or safely access user-specific information.\n\nThe challenge was therefore to design an agentic system capable of selecting the appropriate tools, combining information from multiple sources, and maintaining relevant context without unnecessarily increasing the LLM context window.",
+      "approach": "I designed a multi-agent architecture using LangGraph and LangChain.\n\nMain Agent\n\nThe Main Agent is responsible for understanding the user's request, selecting the appropriate tools, combining their outputs, and generating the final response.\n\nIt can work with:\n\nStudent tools for profiles, progress, summaries, and recommendations\nLearning tools for course statistics, enrollment, and exams\nInstructor tools for instructor information\nRAG for retrieving information from educational documents\nRAG\n\nFor unstructured educational knowledge, I implemented a Retrieval-Augmented Generation pipeline using embeddings and ChromaDB.\n\nThe process is:\n\nUser Question \u2192 Semantic Retrieval \u2192 Relevant Documents \u2192 LLM \u2192 Natural-Language Answer\n\nMultiple relevant documents can be retrieved and combined when answering questions that require information from different sources.\n\nContext & Memory\n\nA dedicated History Agent was implemented to handle long-term conversational context.\n\nRather than sending the entire conversation history to the Main Agent, the History Agent:\n\nSearches the vector database for semantically relevant previous interactions.\nReturns only conversations above a relevance threshold.\nFalls back to a summarized conversation history when relevant interactions cannot be retrieved.\nProduces a concise context that is passed to the Main Agent.\n\nThis approach reduces unnecessary context while preserving useful information from previous interactions.\n\nPermissions & Entity Resolution\n\nThe system also handles practical issues such as:\n\nRole-based access to student information\nRestricting students to their own data\nFuzzy matching for misspelled student names\nDetecting ambiguous names when multiple students have the same name\nCombining tool-generated information with general LLM knowledge when appropriate",
+      "liveDemo": "",
+      "id": "AI-Powered_E-Learning_Agent"
+    },
     {
       "title": "Poem Genre Classification Project",
       "description": "A Natural Language Processing (NLP) project that classifies poems into one of four genres: Affection, Death, Environment, and Music. The project explores text representation learning by fine-tuning a transformer-based embedding model to improve semantic understanding and genre classification performance.",

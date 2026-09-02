@@ -70,8 +70,10 @@ for index, project in enumerate(filtered_projects):
             # -----------------
             # Description
             # -----------------
-            st.write(project["description"])
-
+            description = project["description"].split(' ')
+            n = int(0.3 *len(description))+1
+            description = ' '.join(description[:n:])+ ' ... show more'
+            st.write(description)
             # -----------------
             # Tech Stack
             # -----------------
