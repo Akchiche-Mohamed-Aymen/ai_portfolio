@@ -72,6 +72,29 @@
   ],
   "projects": [
     {
+      "id": "job-scoring-multi-agent",
+      "title": "AI Job Scoring Multi-Agent System",
+      "overview": "The AI Job Scoring Multi-Agent System is an agentic job-matching application designed to evaluate how well a candidate's CV matches a specific job description. The system uses specialized HR and CV agents to structure job requirements, generate evaluation criteria, retrieve relevant evidence from CV documents, and produce evidence-based answers and a final matching score.",
+      "problem": "Traditional CV screening can be time-consuming and may not consistently evaluate candidates against the specific requirements of a job. In addition, CVs are semi-structured documents, making reliable information retrieval challenging. The system addresses these challenges by combining agentic AI with document retrieval to evaluate candidates according to the requirements defined by the HR agent while grounding answers in the actual CV content.",
+      "approach": "The system follows a multi-agent architecture in which an HR Agent analyzes the job description and generates structured evaluation questions and criteria, while a CV Agent retrieves relevant evidence from the candidate's CV and evaluates each requirement based strictly on the available document content. For CV document retrieval, three chunking strategies were explored: character-based chunking as a baseline, semantic chunking based on content similarity, and agentic chunking where an LLM helps determine meaningful document boundaries. The resulting chunks are embedded and stored in ChromaDB for retrieval through LangChain. A React and JavaScript frontend provides the interface for ingesting CVs, structuring jobs, managing API keys, and matching candidates.",
+      "categories": [
+        "GenAI",
+        "Agentic AI",
+        "Frontend Web Development"
+      ],
+      "techStack": [
+        "LangChain",
+        "ChromaDB",
+        "Mistral",
+        "FastApi",
+        "React",
+        "JavaScript",
+        "Embeddings"
+      ],
+      "gitLink": "",
+      "liveDemo": ""
+    },
+    {
       "title": "AI-Powered E-Learning Agent",
       "description": "An AI-powered multi-agent assistant designed for an English e-learning platform. The system combines LLM reasoning with structured learning data, specialized tools, RAG, and conversational memory to provide context-aware and personalized responses.",
       "categories": [
