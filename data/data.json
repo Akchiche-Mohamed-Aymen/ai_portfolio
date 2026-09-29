@@ -73,6 +73,7 @@
   "projects": [
     {
       "id": "job-scoring-multi-agent",
+      "description" : "A multi-agent AI system that analyzes job descriptions and candidate CVs to evaluate job-candidate compatibility using structured criteria, document retrieval, and evidence-based scoring.",
       "title": "AI Job Scoring Multi-Agent System",
       "overview": "The AI Job Scoring Multi-Agent System is an agentic job-matching application designed to evaluate how well a candidate's CV matches a specific job description. The system uses specialized HR and CV agents to structure job requirements, generate evaluation criteria, retrieve relevant evidence from CV documents, and produce evidence-based answers and a final matching score.",
       "problem": "Traditional CV screening can be time-consuming and may not consistently evaluate candidates against the specific requirements of a job. In addition, CVs are semi-structured documents, making reliable information retrieval challenging. The system addresses these challenges by combining agentic AI with document retrieval to evaluate candidates according to the requirements defined by the HR agent while grounding answers in the actual CV content.",
